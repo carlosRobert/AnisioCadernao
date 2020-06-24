@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "AnísioCadernão",
+  "short_name": "AnísioCadernão",
+  "version": "com.carlos.cadernao",
+  "description": "Caderno de questões de diversas disciplinas para a EEETEPA Anísio Teixeira",
+  "author": "Carlos Roberto",
+  "icons": [],
+  "start_url": "index.html"
+}

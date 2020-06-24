@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding:0;
+}
+#main {
+	position: relative; 
+	
+	top: 550px; /* posiciona a 550px para baixo */
+	}
+#entrada {
+	position: relative; 
+		
+	top: 250px; /* posiciona a 600px para baixo */
+		}
+.btn2{
+    color: cornsilk;
+	background-color: rgb(4, 4, 73);
+}
+.btn2:hover{
+	background-color: rgb(161, 161, 204);
+}
+
