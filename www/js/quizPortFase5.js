@@ -67,14 +67,12 @@
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `Você acertou ${numCorrect} do total de ${myQuestions.length} questões.`;
-    if (numCorrect <=2) {
+    resultsContainer.innerHTML = `Você acertou ${numCorrect} do total de ${myQuestions.length} questão.`;
+    if (numCorrect == 0) {
        document.getElementById("t1").innerHTML = "Você precisa estudar mais!";
     }
-    else if (numCorrect == 3) {
-      document.getElementById("t1").innerHTML = "Parabéns!";
-    }
-    else {document.getElementById("t1").innerHTML = "Você acertou todas! Parabéns!"; }
+
+    else {document.getElementById("t1").innerHTML = "Parabéns!"; }
   }
 
   const quizContainer = document.getElementById('quiz');
@@ -82,45 +80,16 @@
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "1) _______é a capacidade de realizar uma tarefa ou um conjunto de tarefas em conformidade com determinados padrões exigidos pela organização. “ Saber fazer”",
+      question: "1) O tema abordado no miniconto “Para que ninguém a quisesse” de Marina Colasanti é:",
       answers: {
-        a: "Atitude",
-        b: "Conhecimento",
-        c: "Habilidade",
-        d: "Liderança",
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "2) O sucesso na __________ não depende só da forma como a mensagem é transmitida, a compreensão dela é fator fundamental. ",
-      answers: {
-        a: "Liderança",
-        b: "Motivação",
-        c: "Capacitação",
-        d: "Comunicação"
-      },
-      correctAnswer: "d"
-    },
-    {
-      question: "3) ___________é a área do conhecimento que visa  a melhorar a qualidade de vida e a desenvolver as habilidades pessoais de cada pessoa.",
-      answers: {
-        a: "Comunicação interpessoal",
-        b: "Relacionamento pessoal",
-        c: "Desenvolvimento pessoal",
-        d: "Empreendedorismo "
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "4) O indivíduo que detém uma forma especial, inovadora, de se dedicar às atividades de organização, administração, execução: principalmente na geração de riquezas.",
-      answers: {
-        a: "Empreendedorismo",
-        b: "Comunicação interpessoal",
-        c: "Capacitação técnica",
-        d: "Educação financeira"
+        a: "violência contra mulher e a submissão do feminino.",
+        b: "relações amorosas entre homens e mulheres no século XXI.",
+        c: "relação de poder entre homem e mulher na sociedade atual.",
+        d: "sentimento de inferioridade das mulheres com relação aos homens.",
       },
       correctAnswer: "a"
     },
+    
   ];
 
   // Kick things off

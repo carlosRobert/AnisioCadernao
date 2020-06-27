@@ -89,7 +89,7 @@
         c: "O habeas data resguarda o direito à informação;",
         d: "O mandado de segurança não protege direito líquido e certo.",
       },
-      correctAnswer: "c"
+      correctAnswer: "d"
     },
     {
       question: "2) Pode ser entendida como o entendimento dos magistrados, exteriorizados em sentenças ou acórdãos, no qual manifestam, de forma harmônica, conhecimento acerca do direito aplicado a um caso concreto, cujos fundamentos das decisões são colocados à disposição da comunidade jurídica através de publicações, servindo como base a pesquisa em contribuição ao saber jurídico. ",
@@ -99,7 +99,7 @@
         c: "Lei",
         d: "Costume"
       },
-      correctAnswer: "a"
+      correctAnswer: "b"
     },
     {
       question: "3) Segundo o Art. 3º da C/88 constituem objetivos fundamentais da República Federativa do Brasil, EXCETO:",
@@ -109,7 +109,7 @@
         c: "erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais;",
         d: "promover o bem de alguns, sem preconceitos de origem, raça, sexo, cor, idade e quaisquer outras formas de discriminação."
       },
-      correctAnswer: "b"
+      correctAnswer: "d"
     },
     {
       question: "4) É o comportamento que se repete no tempo. Há o costume quando as pessoas adquirem um hábito comportamental duradouro, praticando espontaneamente a conduta.",
@@ -119,7 +119,7 @@
         c: "Lei",
         d: "Costume"
       },
-      correctAnswer: "b"
+      correctAnswer: "d"
     },
     {
       question: "5) O _________ destina-se a disciplinar interesses gerais da coletividade, dizendo respeito à coletividade. Ao passo que o __________ é o conjunto de preceitos reguladores das relações dos indivíduos entre si. Tais conceitos dizem respeito, respectivamente à:",
