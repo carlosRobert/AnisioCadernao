@@ -82,7 +82,7 @@
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "1) Considerando a abordagem do texto, os bens imateriais enfatizam a importância das representações culturais para a:",
+      question: " Considerando a abordagem do texto, os bens imateriais enfatizam a importância das representações culturais para a:",
       answers: {
         a: "Construção da identidade nacional.",
         b: "Elaboração do sentimento religioso.",
