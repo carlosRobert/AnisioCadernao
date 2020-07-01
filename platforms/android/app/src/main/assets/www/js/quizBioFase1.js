@@ -1,19 +1,19 @@
 (function(){
   function buildQuiz(){
-    // variable to store the HTML output
+    // variável para armazenar a saída HTML
     const output = [];
 
-    // for each question...
+    // para cada pergunta ...
     myQuestions.forEach(
       (currentQuestion, questionNumber) => {
 
-        // variable to store the list of possible answers
+        // variável para armazenar a lista de respostas possíveis
         const answers = [];
 
-        // and for each available answer...
+        // e para cada resposta disponível ...
         for(letter in currentQuestion.answers){
 
-          // ...add an HTML radio button
+          // ...... add HTML radio button
           answers.push(
             `<label>
               <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -23,7 +23,7 @@
           );
         }
 
-        // add this question and its answers to the output
+        // adicione esta pergunta e suas respostas à saída
         output.push(
           `<div class="question"> ${currentQuestion.question} </div>
           <div class="answers"> ${answers.join('')} </div>`
@@ -31,29 +31,29 @@
       }
     );
 
-    // finally combine our output list into one string of HTML and put it on the page
+    // finalmente combinamos nossa lista de saída em uma string de HTML e a colocamos na página
     quizContainer.innerHTML = output.join('');
   }
 
   function showResults(){
 
-    // gather answer containers from our quiz
+    // reunir containers de respostas do nosso quiz
     const answerContainers = quizContainer.querySelectorAll('.answers');
 
-    // keep track of user's answers
+    // acompanhar as respostas do usuário
     let numCorrect = 0;
 
-    // for each question...
+    // para cada pergunta ...
     myQuestions.forEach( (currentQuestion, questionNumber) => {
 
-      // find selected answer
+      // encontre a resposta selecionada
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
       // if answer is correct
       if(userAnswer === currentQuestion.correctAnswer){
-        // add to the number of correct answers
+        // add ao número de respostas corretas
         numCorrect++;
 
         // color the answers green
@@ -123,7 +123,7 @@
     },
   ];
 
-  // Kick things off
+  
   buildQuiz();
 
   // Event listeners

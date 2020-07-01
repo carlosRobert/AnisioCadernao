@@ -68,11 +68,11 @@
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `Você acertou ${numCorrect} do total de ${myQuestions.length} questões.`;
-    if (numCorrect <=2) {
+    if (numCorrect ==0) {
        document.getElementById("t1").innerHTML = "Você precisa estudar mais!";
     }
-    else if (numCorrect == 3) {
-      document.getElementById("t1").innerHTML = "Parabéns!";
+    else if (numCorrect == 1) {
+      document.getElementById("t1").innerHTML = "Foi legal!<br> Mas você pode melhorar.";
     }
     else {document.getElementById("t1").innerHTML = "Você acertou todas! Parabéns!"; }
   }
@@ -82,45 +82,27 @@
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "1) É comum dizer que todos os organismos são formados por células, estruturas conhecidas como a unidade funcional e estrutural dos seres vivos. Alguns organismos, no entanto, são acelulares e, por isso, alguns autores não os consideram vivos. Entre os seres listados abaixo, qual é o único que não possui células em sua constituição?",
+      question: "1) A Europa foi revitalizada, nos últimos séculos da Idade média, pelo reaquecimento do comércio e pela agitação da vida urbana. A transição do feudalismo para o capitalismo foi, aos poucos, modificando os valores, as ideias, as necessidades artísticas e culturais da sociedade europeia que resultou em uma sociedade:",
       answers: {
-        a: "Bactérias.",
-        b: "Fungos.",
-        c: "protozoários.",
-        d: "Vírus.",
-      },
-      correctAnswer: "d"
-    },
-    {
-      question: "2) (FaZU) Na divisão dos seres vivos em cinco reinos, qual deles é o mais inferior por conter organismos dotados de organização mais simples?",
-      answers: {
-        a: "Monera",
-        b: "Protista",
-        c: "Fungi",
-        d: "Metaphyta"
+        a: "Que estimula uma sociedade efervescente pautada em proposta de um ensino composto por Poesia, Gramática, História, Filosofia;",
+        b: "Sustentada por valores da cultura medieval que passam a reger a nova visão de mundo, mas não deixa de valorizar a mentalidade burguesa;",
+        c: "Com a mentalidade dominante na Idade Média, que concebia um modelo de homem obediente à Igreja;",
+        d: "Baseada no florescimento apenas do comércio centralizada no Estado;",
       },
       correctAnswer: "a"
     },
     {
-      question: "3) Sabemos que todos os seres vivos, com exceção dos vírus, são formados por células. Entretanto, alguns organismos possuem apenas uma célula, enquanto outros possuem milhares. O conjunto de células com estrutura e funções semelhantes recebe o nome de:",
+      question: "2) A frase de Luís, “L’Etat c’est moi” (o estado sou eu), como definição da natureza do absolutismo monárquico, significava:",
       answers: {
-        a: "Órgão.",
-        b: "Organela.",
-        c: "Tecido",
-        d: "Molécula"
+        a: "A unidade do poder estatal, civil e religioso, com a criação de uma igreja Francesa (nacional).",
+        b: "A superioridade do príncipe em relação a todas as classes sociais, reduzindo a um lugar humilde a burguesia enriquecida.",
+        c: "A submissão da nobreza feudal pela eliminação de todos os seus privilégios fiscais.",
+        d: "A centralização do poder real e absoluto do monarca na sua pessoa, sem quaisquer limites institucionais reconhecidos."
       },
-      correctAnswer: "c"
+      correctAnswer: "d"
     },
-    {
-      question: "4) Para um organismo ser considerado vivo, algumas características devem estar presentes. Analise as alternativas a seguir e marque o único atributo que NÃO é encontrado em todos os seres vivos.",
-      answers: {
-        a: "Hereditariedade.",
-        b: "Capacidade de responder a estímulos.",
-        c: "Corpo formado por várias células.",
-        d: "Metabolismo."
-      },
-      correctAnswer: "c"
-    },
+   
+    
   ];
 
   

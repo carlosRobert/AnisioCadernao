@@ -68,10 +68,10 @@
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `Você acertou ${numCorrect} do total de ${myQuestions.length} questões.`;
-    if (numCorrect <=2) {
+    if (numCorrect <=1) {
        document.getElementById("t1").innerHTML = "Você precisa estudar mais!";
     }
-    else if (numCorrect == 3) {
+    else if (numCorrect == 2) {
       document.getElementById("t1").innerHTML = "Parabéns!";
     }
     else {document.getElementById("t1").innerHTML = "Você acertou todas! Parabéns!"; }
@@ -82,45 +82,36 @@
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "1) É comum dizer que todos os organismos são formados por células, estruturas conhecidas como a unidade funcional e estrutural dos seres vivos. Alguns organismos, no entanto, são acelulares e, por isso, alguns autores não os consideram vivos. Entre os seres listados abaixo, qual é o único que não possui células em sua constituição?",
+      question: " Considerando a abordagem do texto, os bens imateriais enfatizam a importância das representações culturais para a:",
       answers: {
-        a: "Bactérias.",
-        b: "Fungos.",
-        c: "protozoários.",
-        d: "Vírus.",
-      },
-      correctAnswer: "d"
-    },
-    {
-      question: "2) (FaZU) Na divisão dos seres vivos em cinco reinos, qual deles é o mais inferior por conter organismos dotados de organização mais simples?",
-      answers: {
-        a: "Monera",
-        b: "Protista",
-        c: "Fungi",
-        d: "Metaphyta"
+        a: "Construção da identidade nacional.",
+        b: "Elaboração do sentimento religioso.",
+        c: "Reprodução do trabalho coletivo.",
+        d: "Reprodução do saber tradicional.",
       },
       correctAnswer: "a"
     },
     {
-      question: "3) Sabemos que todos os seres vivos, com exceção dos vírus, são formados por células. Entretanto, alguns organismos possuem apenas uma célula, enquanto outros possuem milhares. O conjunto de células com estrutura e funções semelhantes recebe o nome de:",
+      question: "2) Os noticiários sobre o continente africano, na maioria das vezes, destacam os problemas sociais, os conflitos étnicos, a fome, as doenças, entre outros fatores negativos. No entanto, ao estudar sobre alguns reinos e povos do continente africano identifica-se:",
       answers: {
-        a: "Órgão.",
-        b: "Organela.",
-        c: "Tecido",
-        d: "Molécula"
+        a: "Belezas naturais escondida pela pobreza e doenças contraídas por vírus como o ébola e a Covid-19, que já mostra um quadro como o Continente com maior índice de contaminação do mundo;",
+        b: "Que os conflitos e guerras tribais entre as nações africanas deixaram esse quadro de calamidade que ainda hoje está presente como principal característica da história desse povo;",
+        c: "O quanto são pertinentes essas informações noticiadas;",
+        d: "Que a África tem diversas riquezas naturais (água, petróleo, ouro, diamantes), além de possuir diversas etnias, comunidades humanas com línguas, costumes diversos."
       },
-      correctAnswer: "c"
+      correctAnswer: "d"
     },
     {
-      question: "4) Para um organismo ser considerado vivo, algumas características devem estar presentes. Analise as alternativas a seguir e marque o único atributo que NÃO é encontrado em todos os seres vivos.",
+      question: "3) <p>'Para os egípcios, o outro mundo encerrava os mesmos prazeres desfrutados na terra – criados, caça, pesca, lazer em família, boa comida e músicas. Mas, para ter acesso a tudo isso, o morto precisava ser absolvido num julgamento final.'</p><cite>(BRAICK. P.R.; MOTA, M. B. História: das cavernas ao terceiro milênio. São Paulo: Moderna, 2007. p. 53.)</cite><p>O deus responsável pelo julgamento dos mortos na religião do antigo Egito era:</p>",
       answers: {
-        a: "Hereditariedade.",
-        b: "Capacidade de responder a estímulos.",
-        c: "Corpo formado por várias células.",
-        d: "Metabolismo."
+        a: "Aton",
+        b: "Isis",
+        c: "Osíris",
+        d: "Anúbis"
       },
-      correctAnswer: "c"
+      correctAnswer: "d"
     },
+    
   ];
 
   
