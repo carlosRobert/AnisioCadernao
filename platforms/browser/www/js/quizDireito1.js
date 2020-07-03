@@ -71,7 +71,7 @@
       if (numCorrect <=2) {
          document.getElementById("t1").innerHTML = "Você precisa estudar mais!";
       }
-      else if (numCorrect <= 4) {
+      else if (numCorrect == 3) {
         document.getElementById("t1").innerHTML = "Parabéns!";
       }
       else {document.getElementById("t1").innerHTML = "Você acertou todas! Parabéns!"; }
@@ -120,18 +120,7 @@
           d: "Revisão Constitucional."
         },
         correctAnswer: "b"
-      },
-      {
-      question: "5) De acordo com a CF/88 a República Federativa do Brasil, formada pela união indissolúvel dos Estados e Municípios e do Distrito Federal, constitui-se em Estado Democrático de Direito e tem como fundamentos: ",
-      answers: {
-        a: "a interferência externa;",
-        b: "o facismo;",
-        c: "o comunismo.",
-        d: "a dignidade da pessoa humana;" 
-      },
-      correctAnswer: "d" 
-      } 
-    
+      }, 
 
     ];
   

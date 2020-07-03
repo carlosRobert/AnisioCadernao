@@ -68,10 +68,10 @@
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `Você acertou ${numCorrect} do total de ${myQuestions.length} questões.`;
-    if (numCorrect <=2) {
+    if (numCorrect <=1) {
        document.getElementById("t1").innerHTML = "Você precisa estudar mais!";
     }
-    else if (numCorrect <= 4) {
+    else if (numCorrect == 2) {
       document.getElementById("t1").innerHTML = "Parabéns!";
     }
     else {document.getElementById("t1").innerHTML = "Você acertou todas! Parabéns!"; }
@@ -82,60 +82,41 @@
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "1) Sobre os Remédios Constitucionais, marque a assertiva INCORRETA:",
+      question: "1) A administração financeira está relacionada com as finanças da empresa. Com base no exposto, assinale a alternativa que apresenta a função do planejamento financeiro dentro do ambiente empresarial",
       answers: {
-        a: "O Habeas Corpus protege o direito de ir e vir do indivíduo;",
-        b: "A Ação Popular pode ser realizada por qualquer pessoa, desde que a mesma seja cidadã;",
-        c: "O habeas data resguarda o direito à informação;",
-        d: "O mandado de segurança não protege direito líquido e certo.",
-      },
-      correctAnswer: "d"
-    },
-    {
-      question: "2) Pode ser entendida como o entendimento dos magistrados, exteriorizados em sentenças ou acórdãos, no qual manifestam, de forma harmônica, conhecimento acerca do direito aplicado a um caso concreto, cujos fundamentos das decisões são colocados à disposição da comunidade jurídica através de publicações, servindo como base a pesquisa em contribuição ao saber jurídico. ",
-      answers: {
-        a: "Doutrina",
-        b: "Jurisprudência",
-        c: "Lei",
-        d: "Costume"
+        a: "O planejamento financeiro tem o foco no mercado, identifica os clientes em potencial e, principalmente, deve servir de base para o desenvolvimento de produtos.",
+        b: "No planejamento financeiro, é possível ao administrador financeiro selecionar, com maior margem de segurança, os ativos mais rentáveis e condizentes com os negócios da empresa, de forma a estabelecer uma rentabilidade mais satisfatória sobre os investimentos.",
+        c: "O planejamento financeiro tem o foco em desenvolver produtos em larga escala que podem ser facilmente encontrados a preços baixos.",
+        d: "O planejamento financeiro tem o foco em identificar investimentos a curto prazo, gerindo permanentemente o capital de giro.",
       },
       correctAnswer: "b"
     },
     {
-      question: "3) Segundo o Art. 3º da C/88 constituem objetivos fundamentais da República Federativa do Brasil, EXCETO:",
+      question: "2) Suponha‐se que uma empresa possua ativo não circulante de R$ 230 milhões, passivo não circulante de R$ 170 milhões e patrimônio líquido de R$ 150 milhões. Nesse caso, o capital de giro da empresa é:",
       answers: {
-        a: "construir uma sociedade livre, justa e solidária;",
-        b: "garantir o desenvolvimento nacional;",
-        c: "erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais;",
-        d: "promover o bem de alguns, sem preconceitos de origem, raça, sexo, cor, idade e quaisquer outras formas de discriminação."
+        a: "90 milhões",
+        b: "100 milhões",
+        c: "110 milhões",
+        d: "120 milhões"
       },
-      correctAnswer: "d"
+      correctAnswer: "a"
     },
     {
-      question: "4) É o comportamento que se repete no tempo. Há o costume quando as pessoas adquirem um hábito comportamental duradouro, praticando espontaneamente a conduta.",
+      question: "3) É a previsão de entradas e saídas de recursos monetários, por um determinado período. Essa projeção deve ser feita com base nos dados levantados nas projeções econômico-financeiras realizadas anteriormente:",
       answers: {
-        a: "Doutrina",
-        b: "Jurisprudência",
-        c: "Lei",
-        d: "Costume"
+        a: "Contas a pagar",
+        b: "Capital de giro",
+        c: "Demonstração do Resultado do Exercício",
+        d: "Fluxo de caixa"
       },
       correctAnswer: "d"
     },
-    {
-      question: "5) O _________ destina-se a disciplinar interesses gerais da coletividade, dizendo respeito à coletividade. Ao passo que o __________ é o conjunto de preceitos reguladores das relações dos indivíduos entre si. Tais conceitos dizem respeito, respectivamente à:",
-      answers: {
-        a: "Direito Privado e Direito Público.",
-        b: "Direito Público e Direito Comparado",
-        c: "Direito Pátrio e Direito Privado",
-        d: "Direito Público e Direito Privado"
-      },
-      correctAnswer: "d"
-    },
+    
   ];
 
-  // Kick things off
+  
   buildQuiz();
 
-  // Event listeners
+  
   submitButton.addEventListener('click', showResults);
 })();
