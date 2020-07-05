@@ -77,13 +77,13 @@
     
     else {document.getElementById("t1").innerHTML = "Você acertou todas! Parabéns!"; }
   }
-
+  
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "1) A Sociologia passou a ter mais importância a partir de dois eventos históricos importantes a Revolução Industrial e a Revolução Francesa. Essas duas revoluções colaboraram para?",
+      question: "1) A Sociologia passou a ter mais importância a partir de dois eventos históricos importantes, a Revolução Industrial e a Revolução Francesa. Essas duas revoluções colaboraram para:",
       answers: {
         a: "O surgimento da sociedade de castas.",
         b: "O nascimento da sociedade estamental.",
